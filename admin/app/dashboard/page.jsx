@@ -1,4 +1,5 @@
 "use client"
+import BaseBotton from "@/components/buttons/BaseBotton";
 import MainLayout from "@/components/mainLayout/MainLayout";
 import BaseModal from "@/components/modals/BaseModal";
 import CustomTable from "@/components/table/CustomTable";
@@ -22,9 +23,9 @@ export default function Dashboard() {
         <main className="flex flex-col items-center justify-center">
             <MainLayout>
                 <h1 className="text-2xl font-bold my-8">داشبورد</h1>
-                <button className="bg-primary text-white px-4 py-2 rounded-md" onClick={() => setOpenModal(true)}>
+                <BaseBotton onClick={() => setOpenModal(true)}>
                     نمونه مدال
-                </button>
+                </BaseBotton>
 
                 <CustomTable data={data} columns={columns} sort={true} search={true} />
             </MainLayout>
