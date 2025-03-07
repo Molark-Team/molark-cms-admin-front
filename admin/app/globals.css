@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import '@flaticon/flaticon-uicons/css/all/all.css'; 
+
+@font-face {
+  font-family: 'DanaFaNum';
+  src: url('/fonts/Digi Rastin Plus Line.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'YekanBakh';
+  src: url('/fonts/YekanBakh-VF.woff') format('woff');
+}
+
+body{
+    font-family: 'YekanBakh', sans-serif;
+}
+
